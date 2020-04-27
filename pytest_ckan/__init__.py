@@ -10,5 +10,5 @@ try:
     from ckan.tests.pytest_ckan.ckan_setup import *
     from ckan.tests.pytest_ckan.fixtures import *
 except ImportError:
-    from .impl.plugin import *
-    from .impl.fixtures import *
+    from pytest_ckan.plugin import *
+    from pytest_ckan.fixtures import *

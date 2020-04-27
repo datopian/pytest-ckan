@@ -19,7 +19,7 @@ To use this in your project:
  * Run `pytest`
  * When tested with CKAN 2.9 or newer, CKAN's built-in pytest plugin and fixtures 
    will be used
- * When tested with older versions of CKAN, the code in `pytest_ckan.impl` will
+ * When tested with older versions of CKAN, the code in `pytest_ckan` will
    be used instead
 
 ### Adding to CKAN project
