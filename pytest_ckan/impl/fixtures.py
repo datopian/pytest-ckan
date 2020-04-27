@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import pytest
-
-import ckan.lib.search as search
-import ckan.tests.helpers as test_helpers
+from ckan import plugins
 from ckan.common import config
+from ckan.lib import search
+from ckan.tests import helpers as test_helpers
 
 
 @pytest.fixture
@@ -130,14 +130,14 @@ def with_plugins(ckan_config):
        :end-before: # END-CONFIG-OVERRIDE
 
     """
-    plugins = ckan_config["ckan.plugins"].split()
-    for plugin in plugins:
-        if not ckan.plugins.plugin_loaded(plugin):
-            ckan.plugins.load(plugin)
+    configured_plugins = ckan_config["ckan.plugins"].split()
+    for plugin in configured_plugins:
+        if not plugins.plugin_loaded(plugin):
+            plugins.load(plugin)
     yield
-    for plugin in reversed(plugins):
-        if ckan.plugins.plugin_loaded(plugin):
-            ckan.plugins.unload(plugin)
+    for plugin in reversed(configured_plugins):
+        if plugins.plugin_loaded(plugin):
+            plugins.unload(plugin)
 
 
 @pytest.fixture
