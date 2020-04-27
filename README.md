@@ -5,11 +5,6 @@ This project backports the `pytest` environment for CKAN from CKAN 2.9 to CKAN
 work with CKAN 2.8 as well as CKAN 2.9 or newer using a single unified test
 suite. 
 
-This work is entirely based on 
-[@wardi's work for ckanext-scheming](https://github.com/ckan/ckanext-scheming/pull/242). 
-It has been extracted so it can be re-used by other CKAN extensions.
-
-
 Installation & Usage
 --------------------
 To use this in your project:
@@ -40,3 +35,18 @@ pytest --ckan-ini=test.ini ckanext/yourextension/tests
 ### Using CKAN Fixtures in Tests
  
 TBD
+
+License & Acknowledgement
+-------------------------
+This work is entirely based on 
+[@wardi's work for ckanext-scheming](https://github.com/ckan/ckanext-scheming/pull/242). 
+It has been extracted so it can be re-used by other CKAN extensions.
+
+[ckanext-scheming](https://github.com/ckan/ckanext-scheming) is copyright 
+(c) Her Majesty the Queen in Right of Canada, represented 
+by the President of the Treasury Board, 2013-2018
+
+This plugin is free software districuted under the terms of the MIT License. 
+See [COPYING](COPYING) for details.  
+
+Copyright 2020 (c) Viderum Inc. / Datopian
