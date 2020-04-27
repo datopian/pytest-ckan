@@ -9,7 +9,6 @@ setup(
     author_email='shahar.evron@datopian.com',
     install_requires=[
         'pytest',
-        'ckan'
     ],
     entry_points={"pytest11": ["ckan = pytest_ckan"]},
     classifiers=["Framework :: Pytest"],
