@@ -24,21 +24,14 @@ To use this in your project:
 
 ### Adding to CKAN project
 
-1. Install this library to your development environment; If you maintain a
-`dev-requirements.txt` or `test-requirements.txt` file you can add this library
-to it. 
-
-2. Add the following code to the `conftest.py` file in your project's testing
-root directory:
-
-```python
-pytest_plugins = [
-    u'pytest_ckan',
-    u'pytest_ckan.fixtures',
-]
-```
+To use this plugin to test your CKAN extension, simply install this library to
+your development / testing environment; If you maintain a 
+`dev-requirements.txt` or `test-requirements.txt` file you can add this 
+library to it. 
 
 ### Running Pytest
+To enable CKAN testing, simply add `--ckan-ini=<path/to/test.ini>` to your 
+`pytest` command, for example:
 
 ```bash
 pytest --ckan-ini=test.ini ckanext/yourextension/tests
