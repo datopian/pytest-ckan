@@ -1,6 +1,9 @@
 /.idea
+/.make-cache
 *.pyc
 __pycache__
 /.venv*
 /*.egg-info
 *.swp
+/build
+/dist

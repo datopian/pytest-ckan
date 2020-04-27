@@ -29,6 +29,6 @@ setup(
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 3',
         'Development Status :: 4 - Beta',
-        'License :: OSI Approved :: MIT',
+        'License :: OSI Approved :: MIT License',
     ],
 )
