@@ -20,9 +20,12 @@ To use this in your project:
 ### Adding to CKAN project
 
 To use this plugin to test your CKAN extension, simply install this library to
-your development / testing environment; If you maintain a 
-`dev-requirements.txt` or `test-requirements.txt` file you can add this 
-library to it. 
+your development / testing environment:
+ 
+    pip install pytest-ckan
+    
+If you maintain a `dev-requirements.txt` or `test-requirements.txt` file you 
+can add this library to it. 
 
 ### Running Pytest
 To enable CKAN testing, simply add `--ckan-ini=<path/to/test.ini>` to your 
@@ -32,13 +35,17 @@ To enable CKAN testing, simply add `--ckan-ini=<path/to/test.ini>` to your
 pytest --ckan-ini=test.ini ckanext/yourextension/tests
 ```
 
-### Using CKAN Fixtures in Tests
+### Using CKAN Fixtures and Markers in Tests
  
-TBD
+TBD; 
+
+For now, see 
+[CKAN 2.9's extension testing guide](https://docs.ckan.org/en/latest/extensions/testing-extensions.html)
+for some examples. 
 
 License & Acknowledgement
 -------------------------
-This work is entirely based on 
+This work is largely based on 
 [@wardi's work for ckanext-scheming](https://github.com/ckan/ckanext-scheming/pull/242). 
 It has been extracted so it can be re-used by other CKAN extensions.
 
