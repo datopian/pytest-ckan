@@ -20,6 +20,7 @@ setup(
     license = 'MIT',
     url='https://github.com/datopian/pytest-ckan',
     install_requires=[
+        'mock',
         'pytest',
     ],
     entry_points={"pytest11": ["ckan = pytest_ckan"]},
