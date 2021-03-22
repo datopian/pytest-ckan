@@ -1,3 +1,6 @@
+# DEPRECATED: This repository has moved
+This project now lives in https://github.com/ckan/pytest-ckan
+
 CKAN 2.8 Pytest Plugin and Fixtures
 ===================================
 This project backports the `pytest` environment for CKAN from CKAN 2.9 to CKAN
